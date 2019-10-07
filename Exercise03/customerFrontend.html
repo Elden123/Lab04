@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 3</title>
+        <script type="text/javascript" src="formChecker.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form onsubmit="return submitForm()" action="customerBackend.php" method="post" id="mainForm" name="mainForm">
+            Username: <input type="text" name="username" id="username" class="textInput"><br>
+            Password: <input type="text" name="password" id="password" class="textInput"><br>
+            <h2>Items for purchase. Type quantity into input box</h2>
+            Apple ($1.20): <input type="text" name="apple" id="apple" value="0" class="radio"><br>
+            Banana ($0.75): <input type="text" name="banana" id="banana" value="0" class="radio"><br>
+            Orange ($1.00): <input type="text" name="orange" id="orange" value="0" class="radio"><br>
+            <h2>Choose Shipping Option</h2>
+            <input type="radio" name="shipping" value="free"> Free 7 day<br>
+            <input type="radio" name="shipping" value="50"> $50.00 over night<br>
+            <input type="radio" name="shipping" value="5"> $5.00 three day<br>
+            <input type="button" value="Reset" onclick="reset()">
+            <input type="submit" value="Submit" name="submit1">
+        </form> 
+    </body>
+</html>

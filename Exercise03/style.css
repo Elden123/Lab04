@@ -1,0 +1,13 @@
+body {
+    background-color: aquamarine;
+    font-family: 'Roboto', sans-serif;
+}
+
+.radio {
+    width: 40px;
+    border: none;
+}
+
+.textInput {
+    border: none;
+}
